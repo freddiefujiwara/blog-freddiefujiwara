@@ -19,13 +19,13 @@
 define('DB_NAME', 'wordpress_db');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'wp_user');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'wp_password');
 
 /** MySQL hostname */
-define('DB_HOST', ':/cloudsql/gcecodelab83:wordpress');
+define('DB_HOST', ':/cloudsql/cakephptest-freddiefujiwara:wordpress');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -79,6 +79,8 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define ('DISABLE_WP_CRON', 'true');
+define ('DISALLOW_FILE_MODS', 'true');
 
 /* That's all, stop editing! Happy blogging. */
 
@@ -88,3 +90,4 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
